@@ -31,6 +31,7 @@ let firstName = 'Valeriia';
 let middleName = 'Maryanivna';
 let lastName = 'Yurisrovska';
 
+
 let user =`${firstName} ${middleName} ${lastName} ` ;
 
 console.log(user);
