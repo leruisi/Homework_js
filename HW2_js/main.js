@@ -129,7 +129,8 @@ if (numberOne !== 0)
 {
     document.write('<div>Вірно</div>');
 } else {
-    document.write('<div>Не вірно</div>');
+    document.write('<div> yt Вірно</div>');
+
 }
 
 

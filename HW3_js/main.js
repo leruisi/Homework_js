@@ -8,7 +8,7 @@ for ( let i= 0; i<10; i++) {
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
 
 for (let i = 0; i < 10; i++) {
-   document.write(`<div>for loop ${i} </div>`);
+   document.write(`<div> for loop ${i} </div>`);
 }
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
