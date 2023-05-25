@@ -1,6 +1,6 @@
 // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
 
-function User(id, name, surname, email, phone) {
+function Users(id, name, surname, email, phone) {
     this.id = id;
     this.name = name;
     this.surname = surname;
@@ -9,20 +9,20 @@ function User(id, name, surname, email, phone) {
 }
 
 let users = [
-    new User(1, "Anderw", "Morenko", "jgjtjg@.com", "1234567890"),
-    new User(2, "Lesha", "Krivilev", "rrr444.com", "9876543210"),
-    new User(3, "Maryan", "Retno", "bnhgy.com", "5555555555"),
-    new User(4, "Alesya", "Tre", "gtgyhuj.com", "1111111111"),
-    new User(5, "Lera", "Yur", "aqswse.com", "9999999999")
+    new Users(1, "Anderw", "Morenko", "jgjtjg@.com", "1234567890"),
+    new Users(2, "Lesha", "Krivilev", "rrr444.com", "9876543210"),
+    new Users(3, "Maryan", "Retno", "bnhgy.com", "5555555555"),
+    new Users(4, "Alesya", "Tre", "gtgyhuj.com", "1111111111"),
+    new Users(5, "Lera", "Yur", "aqswse.com", "9999999999")
 ];
 
 
-users.map(function(user) {
-    console.log("ID:", user.id);
-    console.log("Name:", user.name);
-    console.log("Surname:", user.surname);
-    console.log("Email:", user.email);
-    console.log("Phone:", user.phone);
+users.map(function(users) {
+    console.log("ID:", users.id);
+    console.log("Name:", users.name);
+    console.log("Surname:", users.surname);
+    console.log("Email:", users.email);
+    console.log("Phone:", users.phone);
 
 });
 
@@ -192,15 +192,15 @@ function Car(model, manufacturer, year, maxSpeed, engineVolume) {
 }
 
 let car1 = new Car("Q8", "Audi", 2022, 250, 2.5);
-car1.drive(); // Вывод: Їдемо зі швидкістю 220 на годину
+car1.drive();
 
 car1.info();
 
 car1.increaseMaxSpeed(40);
-console.log(car1.maxSpeed); // Вывод: 250
+console.log(car1.maxSpeed);
 
 car1.changeYear(2023);
-console.log(car1.year); // Вывод: 2021
+console.log(car1.year);
 
 let driver = {
     name: "Andrew",
@@ -209,7 +209,7 @@ let driver = {
 };
 
 car1.addDriver(driver);
-console.log(car1.driver); // Вывод: { name: "John", age: 30, license: "B" }
+console.log(car1.driver);
 
 
 
