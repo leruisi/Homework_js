@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="formOne">
+    <input type="text"
+           name="firstname">
+    <br>
+    <input type="text" name="surname">
+    <br>
+    <input type="number" name="age">
+
+<div>
+    <button>send</button>
+</div>
+</form>
+
+<!--// Є сторінка index.html (назва довільна), при відвідуванні якої в локальне сховще, в масив sessions зберігається інформація про дату та час відвідування сторінки. Є ще сторінка sessions.html (назва довільна), при відвідуванні якої потрібно відмалювати всю інформацію про відвідування сторінки index.html.-->
+<!--// Інфу НЕ виводити в консоль, а побудувати дом структуру під кожну сессію-->
+<h1>Sessions</h1>
+
+<div id="sessionsContainer"></div>
+
+<script>
+
+    let sessions = JSON.parse(localStorage.getItem('sessions')) || [];
+
+    let sessionsContainer = document.getElementById('sessionsContainer');
+    sessions.forEach(function(session) {
+
+        let sessionDiv = document.createElement('div');
+        sessionDiv.textContent = session;
+
+        sessionsContainer.appendChild(sessionDiv);
+    });
+</script>
+
+
+
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
